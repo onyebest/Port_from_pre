@@ -1,0 +1,59 @@
+.nav {
+  background: linear-gradient(225deg, #000 0%, #191919 100%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.nav .logo {
+  margin: 0.7rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.nav .logo a{
+  color: #1c78ce;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__items li {
+  margin: 0.7rem 1rem;
+}
+
+.nav .cta {
+  margin: 0.7rem 1rem;
+}
+
+.menu {
+  display: none;
+  margin: 0.7rem 1rem;
+  font-size: 2rem;
+  color: #1c78ce;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 992px) {
+    .menu{
+        display: block;
+        line-height: 1px;
+    }
+
+    .nav__items{
+        position: absolute;
+        top: 3.2rem;
+        right: 3rem;
+        flex-direction: column;
+        text-align: right;
+        background: linear-gradient(225deg, #000 0%, #191919 100%);
+        z-index: 10;
+        height: fit-content;
+        transition: all ease-out 0.2s;
+    }
+}

@@ -1,0 +1,59 @@
+.contact{
+  height: 100vh;
+  overflow: hidden;
+  width: 100% !important;
+}
+
+.top__text{
+  color: var(--color-white);
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.contact h4{
+  color: var(--color-white);
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 80%;
+  margin: 3rem auto 2rem;
+}
+
+input, textarea{
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid white;
+  color: var(--color-white);
+}
+
+.btn{
+  width: 100%;
+  font-weight: bolder;
+  background-color: var(--primary-color);
+  border: var(--color-white);
+}
+
+@media screen and (max-width: 992px){
+  .contact{
+    height: 100vh;
+    overflow-y: visible;
+  }
+
+  .top__text{
+    font-size: 2rem;
+  }
+  
+  .contact h4{
+    width: 90%;
+  }
+}

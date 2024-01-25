@@ -1,0 +1,25 @@
+.cta__container a {
+  border-radius: 42px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  padding: 5px 15px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.cta__container a:hover {
+    background-color: rgba(255, 255, 255, 0.497);
+    color: black !important;
+    box-shadow: 1.5px 1.5px 9px rgb(154, 152, 152);
+}
+
+
+.cta__container .icon{
+  margin-left: 1rem;
+}
+
+.cta__container .icon:hover{
+  color: black;
+}

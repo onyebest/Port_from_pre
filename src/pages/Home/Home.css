@@ -1,0 +1,146 @@
+.hero__section {
+  height: fit-content;
+  overflow: hidden;
+}
+
+.hero__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__template__1 {
+  width: 50%;
+  margin: 5rem 0 0 8rem;
+}
+
+.hero__template__1 h5 {
+  border-radius: 5px;
+  background: var(--secondary-color);
+  width: fit-content;
+  padding: 10px 15px;
+  color: #000;
+  font-size: 12px;
+}
+
+.hero__template__1 h4 {
+  color: #fff;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.3rem;
+  margin: 1.5rem 0;
+}
+
+.hero__template__1 h6 {
+  color: #696969;
+  width: 514px;
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: light;
+}
+
+.hero__template__1 .hire {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 6px;
+  width: 100%;
+}
+
+.hero__template__1 .hire a {
+  border-radius: 42px;
+  border: 1px solid var(--primary-color);
+  padding: 5px 15px;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  width: fit-content;
+}
+
+.hero__template__1 .hire a:hover {
+  background-color: rgba(255, 255, 255, 0.497);
+  color: black !important;
+  box-shadow: 1.5px 1.5px 9px rgb(154, 152, 152);
+}
+
+.hero__template__2 {
+  background: url("../../assest/port-image.png");
+  background-size: "cover";
+  height: 100vh;
+  margin-top: -70px;
+  font-size: 50px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%) brightness(20%);
+  z-index: -99;
+}
+
+.hero__section .links .link {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero__section .links .link a {
+  color: #69696953;
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 992px) {
+
+  .hero__section {
+    height: 100vh;
+    overflow-y: visible;
+  }
+
+  .hero__content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hero__template__1 {
+    width: 90%;
+    align-items: center;
+    margin: 3rem auto;
+  }
+
+  .hero__template__1 .hire {
+    width: 100%;
+    justify-content: left;
+    gap: 9px;
+  }
+
+  .hero__template__1 h6 {
+    color: #696969;
+    width: 100%;
+    flex-shrink: 0;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    font-weight: light;
+  }
+
+  /* .hero__template__2 {
+    margin-top: -14rem;
+  } */
+}
+
+
+@media screen and (max-width: 425px){
+  .hero__template__1 h4 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    margin: 1.5rem 0;
+  }
+
+
+  /* .hero__template__2 {
+    height: 150vh;
+    margin-top: -rem;
+  } */
+}

@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+}
+
+:root{
+  --primary-color: #3C8EFC;
+  --secondary-color: #04294F;
+  --color-white: #ffffff9b;
+}
+
+body {
+  align-items: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background: linear-gradient(140deg, #0B0C0D 0%, #2D2F33 100%), no-repeat;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+a{
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+a:hover{
+  color: rgba(156, 154, 154, 0.429);
+}
